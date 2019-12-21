@@ -1,0 +1,18 @@
+import pandas as pd
+import numpy as np
+
+for H1 in range(1,5,1):
+        fold = 1
+        OPtype = 'PCA'
+        # filename = ['H:/BYK/Spectra/',fold, '/averspectra- ', str(H1), '-', str(H2), '.csv']  #这种结果是list
+        filename = 'F:/RBFNN_whichcategory/RBFNN-' + OPtype + str(fold) + '.csv'
+        df = pd.read_csv(filename, header=None)
+        category = []
+        result = pd.DataFrame()
+        maxcol = max
+        for i in range(maxcol):
+                a = np.argmax(df.iloc[:, i])
+                n = a + 1
+                category.append(n)
+        result = result.append(category)
+        result.to_csv('F:/RBFNN_whichcategory/' + OPtype + str(fold) + 'result' + '.csv', index=None,header=None)
