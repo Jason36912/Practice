@@ -7,4 +7,3 @@ for H1 in leavetype:
         #filename = 'H:/BYK/Spectra/02/averspectra-1-3.csv'
         df = pd.read_csv(filename,header=None)
         df.to_csv('F:/数据处理/混合样本/'+'LabeledMerge'+'.csv', mode='a', header=False,index=None)
-        df = None

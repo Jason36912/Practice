@@ -5,7 +5,7 @@ def maxlinenum(df):
     end = df.shape[0]
     return end
 
-file = ['1','2','3','4']
+file = ['1','2','3','4','5']
 for H1 in file:
 
     #filename = ['H:/BYK/Spectra/',fold, '/averspectra- ', str(H1), '-', str(H2), '.csv']  #这种结果是list

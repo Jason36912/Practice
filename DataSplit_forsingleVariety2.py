@@ -6,8 +6,8 @@ def maxlinenum(df):
     end = df.shape[0]
     return end
 
-file = ['01','02','03','04']
-leavetype = ['CK','WKB','DWB','BYK']
+file = ['01','02','03','04']  #水稻品种
+leavetype = ['CK','WKB','DWB','BYK']  #病害品种
 for H1 in file:
     for ty in leavetype:
         for i in range(1,6,1):
