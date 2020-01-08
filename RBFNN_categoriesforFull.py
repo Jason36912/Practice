@@ -11,7 +11,7 @@ for H1 in range(1,6,1):  #
         result = pd.DataFrame()
         maxcol = df.shape[1]  # 读取最大列数
         for i in range(maxcol):
-                a = np.argmax(df.iloc[:, i])  # 判断该列中最大行，并返回行号
+                a = np.argmax(df.iloc[:, i])  # 判断该列中数值最大的那行，并返回行号
                 n = a + 1  # a的范围0123， +1即代表事先约定的标签1234
                 category.append(n)
         result = result.append(category)  # 将列表转dataframe, 便于存储
